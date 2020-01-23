@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { NatilleraModel } from '../models/natillera/natillera.model';
+import { NatilleraModel } from '../models/natilleramodel.model';
 import { map } from 'rxjs/operators';
 
 @Injectable({
