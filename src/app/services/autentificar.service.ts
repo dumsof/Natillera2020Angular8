@@ -39,7 +39,7 @@ export class AutentificarService {
         console.log('este es el token que se devuelve', token);
         // store user details and jwt token in local storage to keep user logged in between page refreshes
         localStorage.setItem('currentUser', JSON.stringify(token));
-        this.currentRespuesaLogueoSubject.next(token);
+        //this.currentRespuesaLogueoSubject.next(token);
         return token;
       }));
   }

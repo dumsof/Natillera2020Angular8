@@ -19,7 +19,7 @@ import {
   MatTooltipModule,
   MatTableModule,
   MatPaginatorModule,
-  MatCardModule, 
+  MatCardModule,
   MatDialogModule,
   MatMenuModule,
   MatProgressSpinnerModule
@@ -45,7 +45,7 @@ import {
     MatTooltipModule,
     MatTableModule,
     MatPaginatorModule,
-    MatCardModule,    
+    MatCardModule,
     MatDialogModule,
     MatMenuModule,
     MatProgressSpinnerModule
@@ -67,7 +67,7 @@ import {
     MatTooltipModule,
     MatTableModule,
     MatPaginatorModule,
-    MatCardModule,      
+    MatCardModule,
     MatDialogModule,
     MatMenuModule,
     MatProgressSpinnerModule

@@ -1,19 +1,21 @@
 
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
-
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AppComponent } from './app.component';
 
-import { appRoutingModule } from './app.routing';
+
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 //se importa el archivo que tiene todos los modulos de material
-import { MaterialModule} from './material.module';
-
+import { MaterialModule } from './material.module';
+//dum: componentes generados.
+import { appRoutingModule } from './app.routing';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { HeaderComponent } from './navigation/header/header.component';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 
 
@@ -21,7 +23,9 @@ import { LoginComponent } from './components/login/login.component';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
@@ -32,6 +36,7 @@ import { LoginComponent } from './components/login/login.component';
     HttpClientModule
   ],
   providers: [],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

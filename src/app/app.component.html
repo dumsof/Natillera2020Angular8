@@ -7,13 +7,30 @@
 </nav> -->
 
 <!-- Toolbar -->
-<mat-toolbar color="primary" class="app-header">
+<!-- <mat-toolbar color="primary" class="app-header">
     <div><a href="https://www.positronx.io" target="_blank" class="positronx">PositronX.io</a></div>
     <span class="nav-tool-items">
       <a mat-button routerLink="Home" routerLinkActive="active">Home</a>
       <a mat-button mat-raised-button routerLink="Logout" routerLinkActive="active">Logout</a>
     </span>
-</mat-toolbar>
-<div class="container m-5">
+</mat-toolbar> -->
+
+<app-layout>
+    <mat-sidenav-container>
+        <mat-sidenav #sidenav role="navigation">
+            <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+        </mat-sidenav>
+        <mat-sidenav-content>
+            <!--in here all the content must reside. We will add a navigation header as well-->
+            <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+            <main>
+                <router-outlet></router-outlet>
+            </main>
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+</app-layout>
+
+
+<!-- <div class="container m-5">
     <router-outlet></router-outlet>
-</div>
+</div> -->
